@@ -62,10 +62,31 @@ export function matchDirectOrder(query: string, records: any[]) {
 // =========================
 
 function genericMatch(query: string, records: any[]) {
-  const normalizedQuery = query.toLowerCase();
+  const normalizedQuery = query.toLowerCase().trim();
 
   let bestMatch = null;
   let highestScore = 0;
+
+  // Common weak words to ignore
+  const stopWords = [
+    "how",
+    "what",
+    "where",
+    "is",
+    "the",
+    "a",
+    "an",
+    "to",
+    "do",
+    "can",
+    "i",
+    "you",
+    "me"
+  ];
+
+  const queryWords = normalizedQuery
+    .split(" ")
+    .filter(word => !stopWords.includes(word));
 
   for (const record of records) {
     let score = 0;
@@ -73,20 +94,32 @@ function genericMatch(query: string, records: any[]) {
     for (const keyword of record.keywords || []) {
       const normalizedKeyword = keyword.toLowerCase();
 
+      // Strong exact phrase match
       if (normalizedQuery.includes(normalizedKeyword)) {
-        score += 5;
+        score += 10;
       }
 
-      const queryWords = normalizedQuery.split(" ");
-      const keywordWords = normalizedKeyword.split(" ");
+      // Partial keyword matching
+      const keywordWords = normalizedKeyword
+        .split(" ")
+        .filter(word => !stopWords.includes(word));
 
       for (const qWord of queryWords) {
         for (const kWord of keywordWords) {
           if (qWord === kWord) {
-            score += 1;
+            score += 3;
           }
         }
       }
+    }
+
+    // Bonus if question text matches
+    if (
+      normalizedQuery.includes(
+        record.question?.toLowerCase() || ""
+      )
+    ) {
+      score += 15;
     }
 
     if (score > highestScore) {
@@ -95,7 +128,8 @@ function genericMatch(query: string, records: any[]) {
     }
   }
 
-  if (highestScore < 2) {
+  // Confidence threshold
+  if (highestScore < 5) {
     return null;
   }
 

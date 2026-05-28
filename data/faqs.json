@@ -1,49 +1,66 @@
-{
-  "category": "faqs",
-  "version": 1,
-  "type": "knowledge",
-  "entries": [
-    {
-      "id": "faq-001",
-      "intent": "chatbot_capabilities",
-      "keywords": ["what can you do", "help", "features", "chatbot help", "commands"],
-      "question": "What can this chatbot help me with?",
-      "answer": "I can look up your timetable, exam dates, assignment reminders, faculty contacts, club info, affordable food options, cafe details, and help you place direct orders or find a student delivery partner. Just ask in plain English."
-    },
-    {
-      "id": "faq-002",
-      "intent": "how_to_ask",
-      "keywords": ["how to use", "how to ask", "query", "search"],
-      "question": "How should I phrase my questions?",
-      "answer": "Ask naturally - for example: 'What's my BCA sem 3 timetable on Monday?', 'When is the DBMS exam?', or 'Who do I contact for accounting?'. Including your program and semester helps me give precise answers."
-    },
-    {
-      "id": "faq-003",
-      "intent": "campus_address",
-      "keywords": ["address", "location", "where is tetso", "directions", "map"],
-      "question": "Where is Tetso College located?",
-      "answer": "Tetso College is located at 7th Mile, Chumukedima, Dimapur, Nagaland - 797115. The nearest landmark is the NH-29 highway junction."
-    },
-    {
-      "id": "faq-004",
-      "intent": "academic_calendar",
-      "keywords": ["academic calendar", "semester dates", "vacation", "holidays", "term"],
-      "question": "When does the semester start and end?",
-      "answer": "Odd semesters run July to November and even semesters run January to May. Winter break is typically mid-December to early January; summer break is June. Refer to the official academic calendar on the college website for exact dates."
-    },
-    {
-      "id": "faq-005",
-      "intent": "lost_and_found",
-      "keywords": ["lost and found", "lost item", "found", "missing"],
-      "question": "I lost something on campus - where do I check?",
-      "answer": "Lost and found items are kept at the Security Office near Gate 1 for 14 days before being archived. You can also post in the student notice group with a description and your contact."
-    },
-    {
-      "id": "faq-006",
-      "intent": "contact_admin_office",
-      "keywords": ["admin office", "principal", "main office", "reception"],
-      "question": "How do I contact the administration office?",
-      "answer": "The Administration Office is on the ground floor of the Main Block. Reach them at admin@tetsocollege.edu.in or +91-3862-242301 during 09:00-16:00, Mon-Fri."
-    }
-  ]
-}
+  {
+    "category": "faqs",
+    "version": 1,
+    "type": "knowledge",
+    "entries": [
+      {
+        "id": "faq-001",
+        "intent": "chatbot_capabilities",
+        "keywords": ["what can you do", "help", "features", "chatbot help", "commands"],
+        "question": "What can this chatbot help me with?",
+        "answer": "I can look up your timetable, exam dates, assignment reminders, faculty contacts, club info, affordable food options, cafe details, and help you place direct orders or find a student delivery partner. Just ask in plain English."
+      },
+      {
+        "id": "faq-002",
+        "intent": "how_to_ask",
+        "keywords": ["how to use", "how to ask", "query", "search"],
+        "question": "How should I phrase my questions?",
+        "answer": "Ask naturally - for example: 'What's my BCA sem 3 timetable on Monday?', 'When is the DBMS exam?', or 'Who do I contact for accounting?'. Including your program and semester helps me give precise answers."
+      },
+      {
+        "id": "faq-003",
+        "intent": "campus_address",
+        "keywords": ["address", "location", "where is tetso", "directions", "map"],
+        "question": "Where is Tetso College located?",
+        "answer": "Tetso College is located at 7th Mile, Chumukedima, Dimapur, Nagaland - 797115. The nearest landmark is the NH-29 highway junction."
+      },
+      {
+        "id": "faq-004",
+        "intent": "academic_calendar",
+        "keywords": ["academic calendar", "semester dates", "vacation", "holidays", "term"],
+        "question": "When does the semester start and end?",
+        "answer": "Odd semesters run July to November and even semesters run January to May. Winter break is typically mid-December to early January; summer break is June. Refer to the official academic calendar on the college website for exact dates."
+      },
+      {
+        "id": "faq-005",
+        "intent": "lost_and_found",
+        "keywords": [
+  "lost and found",
+  "lost item",
+  "missing item",
+  "lost phone",
+  "found",
+  "missing",
+  "security office"
+],
+        "question": "I lost something on campus - where do I check?",
+        "answer": "Lost and found items are kept at the Security Office near Gate 1 for 14 days before being archived. You can also post in the student notice group with a description and your contact."
+      },
+      {
+        "id": "faq-006",
+        "intent": "contact_admin_office",
+        "keywords": [
+  "admin office",
+  "administration",
+  "office",
+  "principal",
+  "main office",
+  "reception",
+  "contact admin",
+  "college office"
+],
+        "question": "How do I contact the administration office?",
+        "answer": "The Administration Office is on the ground floor of the Main Block. Reach them at admin@tetsocollege.edu.in or +91-3862-242301 during 09:00-16:00, Mon-Fri."
+      }
+    ]
+  }
