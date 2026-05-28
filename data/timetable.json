@@ -11,11 +11,11 @@
       "section": "A",
       "day": "Monday",
       "periods": [
-        { "start": "09:00", "end": "09:55", "subject": "Data Structures", "faculty": "Rani Majaw", "room": "C-4" },
-        { "start": "10:00", "end": "10:55", "subject": "Database Management", "faculty": "Visato", "room": "C4" },
-        { "start": "11:00", "end": "11:55", "subject": "Discrete Mathematics", "faculty": "Nangshiba", "room": "C4" },
-        { "start": "12:00", "end": "12:55", "subject": "Operating Systems", "faculty": "Dr.Lucy", "room": "C4" },
-        { "start": "14:00", "end": "15:30", "subject": "DBMS Lab", "faculty": "Visato", "room": "Charles Babbage" }
+        { "start": "09:00", "end": "09:55", "subject": "Data Structures", "faculty": "Dr. Imkong Longkumer", "room": "B-201" },
+        { "start": "10:00", "end": "10:55", "subject": "Database Management", "faculty": "Ms. Aien Jamir", "room": "B-201" },
+        { "start": "11:00", "end": "11:55", "subject": "Discrete Mathematics", "faculty": "Mr. Renben Kikon", "room": "B-203" },
+        { "start": "12:00", "end": "12:55", "subject": "Operating Systems", "faculty": "Dr. Akumla Pongener", "room": "B-201" },
+        { "start": "14:00", "end": "15:30", "subject": "DBMS Lab", "faculty": "Ms. Aien Jamir", "room": "Lab-2" }
       ]
     },
     {
@@ -26,10 +26,10 @@
       "section": "A",
       "day": "Tuesday",
       "periods": [
-        { "start": "09:00", "end": "09:55", "subject": "Web Technologies", "faculty": "Wati", "room": "Multi-media" },
-        { "start": "10:00", "end": "10:55", "subject": "Data Structures", "faculty": "Rani Majaw", "room": "C4" },
-        { "start": "11:00", "end": "11:55", "subject": "English Communication", "faculty": "Tenipumei", "room": "C4" },
-        { "start": "12:00", "end": "12:55", "subject": "Operating Systems", "faculty": "Dr. Lucy", "room": "C4" }
+        { "start": "09:00", "end": "09:55", "subject": "Web Technologies", "faculty": "Mr. Vikuolie Mero", "room": "B-202" },
+        { "start": "10:00", "end": "10:55", "subject": "Data Structures", "faculty": "Dr. Imkong Longkumer", "room": "B-201" },
+        { "start": "11:00", "end": "11:55", "subject": "English Communication", "faculty": "Ms. Limatula Ao", "room": "B-205" },
+        { "start": "12:00", "end": "12:55", "subject": "Operating Systems", "faculty": "Dr. Akumla Pongener", "room": "B-201" }
       ]
     },
     {
@@ -40,10 +40,10 @@
       "section": "B",
       "day": "Monday",
       "periods": [
-        { "start": "09:00", "end": "09:55", "subject": "Principles of Management", "faculty": "Dr. Toshi Aier", "room": "A-101" },
-        { "start": "10:00", "end": "10:55", "subject": "Financial Accounting", "faculty": "Mr. Bendang Walling", "room": "F-101" },
-        { "start": "11:00", "end": "11:55", "subject": "Business Economics", "faculty": "Ms. Hukheli Sema", "room": "B-103" },
-        { "start": "12:00", "end": "12:55", "subject": "Business Communication", "faculty": "Ms. Limatula Ao", "room": "D-101" }
+        { "start": "09:00", "end": "09:55", "subject": "Principles of Management", "faculty": "Dr. Toshi Aier", "room": "C-101" },
+        { "start": "10:00", "end": "10:55", "subject": "Financial Accounting", "faculty": "Mr. Bendang Walling", "room": "C-101" },
+        { "start": "11:00", "end": "11:55", "subject": "Business Economics", "faculty": "Ms. Hukheli Sema", "room": "C-103" },
+        { "start": "12:00", "end": "12:55", "subject": "Business Communication", "faculty": "Ms. Limatula Ao", "room": "C-101" }
       ]
     },
     {

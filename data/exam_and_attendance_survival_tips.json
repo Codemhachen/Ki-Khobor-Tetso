@@ -7,7 +7,7 @@
       "id": "tip-001",
       "intent": "low_attendance_recovery",
       "keywords": ["low attendance", "shortage", "make up attendance", "75%"],
-      "question": "I'm short on attendance - what can I do?",
+      "question": "I'm short on attendance — what can I do?",
       "answer": "Approach your class mentor early. Genuine medical or family emergencies with documentation may be considered. Attend every remaining class, and note that some departments count NSS/sports activities toward attendance."
     },
     {
@@ -29,7 +29,7 @@
       "intent": "attendance_tracking",
       "keywords": ["track attendance", "attendance portal", "check attendance"],
       "question": "How do I check my attendance percentage?",
-      "answer": "Log in to the student portal under the 'Attendance' tab - updated weekly. Raise discrepancies with the subject faculty within 7 days."
+      "answer": "Log in to the student portal under the 'Attendance' tab — updated weekly. Raise discrepancies with the subject faculty within 7 days."
     }
   ]
 }

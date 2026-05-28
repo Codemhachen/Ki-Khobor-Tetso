@@ -15,7 +15,7 @@
       "intent": "fee_payment",
       "keywords": ["fees", "fee payment", "online payment", "due date", "tuition"],
       "question": "How and when do I pay my semester fees?",
-      "answer": "Pay online via the student portal or at the accounts office. Due dates fall within the first 3 weeks of each semester. Late payment incurs a Rs.500 fine."
+      "answer": "Pay online via the student portal or at the accounts office. Due dates fall within the first 3 weeks of each semester. Late payment incurs a ₹500 fine."
     },
     {
       "id": "sq-003",
@@ -29,7 +29,7 @@
       "intent": "transcript_request",
       "keywords": ["transcript", "marksheet", "certificate", "duplicate marksheet"],
       "question": "How do I request transcripts or marksheets?",
-      "answer": "Submit a written application at the Examination Cell with a Rs.200 fee. Transcripts are issued within 7 working days."
+      "answer": "Submit a written application at the Examination Cell with a ₹200 fee. Transcripts are issued within 7 working days."
     },
     {
       "id": "sq-005",

@@ -8,21 +8,21 @@
       "intent": "exam_preparation",
       "keywords": ["exam prep", "how to study", "study tips", "senior advice"],
       "question": "How should I prepare for end-semester exams?",
-      "answer": "Start at least 4 weeks early. Work through previous-year papers - patterns repeat. Form a small study group and use the library reading hall during peak prep weeks."
+      "answer": "Start at least 4 weeks early. Work through previous-year papers — patterns repeat. Form a small study group and use the library reading hall during peak prep weeks."
     },
     {
       "id": "sm-002",
       "intent": "first_year_advice",
       "keywords": ["first year", "freshman", "new student", "tips", "orientation"],
       "question": "What advice do seniors give first-year students?",
-      "answer": "Attend orientation, join one club early to build friends, don't skip the first month of classes, and find your class CR - they will be your lifeline for notices and notes."
+      "answer": "Attend orientation, join one club early to build friends, don't skip the first month of classes, and find your class CR — they will be your lifeline for notices and notes."
     },
     {
       "id": "sm-003",
       "intent": "backlog_clearance",
       "keywords": ["backlog", "fail", "supplementary", "reappear", "clear backlog"],
       "question": "How do I clear a backlog subject?",
-      "answer": "Register for the supplementary exam within the window announced by the Exam Cell (usually 2 weeks after results). Pay Rs.600 per subject and request notes from the faculty early."
+      "answer": "Register for the supplementary exam within the window announced by the Exam Cell (usually 2 weeks after results). Pay ₹600 per subject and request notes from the faculty early."
     },
     {
       "id": "sm-004",

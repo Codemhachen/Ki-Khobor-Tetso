@@ -6,18 +6,18 @@
     {
       "id": "cl-001",
       "keywords": ["coding", "programming", "tech", "hackathon", "computer club"],
-      "name": "Tech Nova",
+      "name": "Tetso Coders Club",
       "category": "Technical",
       "description": "Student-run club for coding, hackathons, and open-source projects.",
       "meeting_day": "Friday, 15:00",
-      "venue": "Computer Lab 3, C-Block",
+      "venue": "Computer Lab 3, B-Block",
       "contact": "coders.club@tetsocollege.edu.in",
       "how_to_join": "Sign up at the club fair in August or email the coordinator with your year and interest area."
     },
     {
       "id": "cl-002",
       "keywords": ["music", "band", "singing", "instruments", "cultural"],
-      "name": "Tetso Music Club",
+      "name": "Harmony Music Society",
       "category": "Cultural",
       "description": "College music society organizing band performances, open mics, and intercollege fests.",
       "meeting_day": "Wednesday, 16:00",
@@ -28,11 +28,11 @@
     {
       "id": "cl-003",
       "keywords": ["debate", "MUN", "model UN", "public speaking", "literary"],
-      "name": "Tetso Oratory Club",
+      "name": "Tetso Debating & MUN Society",
       "category": "Literary",
       "description": "Weekly debates, parliamentary sessions, and intercollege MUN representation.",
       "meeting_day": "Saturday, 11:00",
-      "venue": "Lorin Hall, B-Block",
+      "venue": "Seminar Hall, A-Block",
       "contact": "debate.society@tetsocollege.edu.in",
       "how_to_join": "Attend two trial sessions, then register with the secretary."
     },
@@ -43,7 +43,7 @@
       "category": "Sports",
       "description": "Manages all inter-departmental and intercollege sports tournaments.",
       "meeting_day": "Monday & Thursday, 16:30",
-      "venue": "Tetso Sports Cambus",
+      "venue": "College Sports Ground",
       "contact": "sports@tetsocollege.edu.in",
       "how_to_join": "Register at the Physical Education Department; trials are held in the first month."
     },

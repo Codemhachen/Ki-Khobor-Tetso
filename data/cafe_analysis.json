@@ -9,18 +9,18 @@
       "cafe_name": "Tetso Main Canteen",
       "rating": 4.1,
       "popular_items": ["Veg Thali", "Chicken Biryani", "Cold Coffee"],
-      "price_range": "Rs.30 - Rs.120",
+      "price_range": "₹30 - ₹120",
       "location": "Ground Floor, Main Block",
       "crowd_times": ["12:30-13:30", "15:30-16:00"]
     },
     {
       "id": "ca-002",
       "keywords": ["library cafe", "study cafe", "quiet"],
-      "cafe_name": "Tetso Cafe",
+      "cafe_name": "Library Side Cafe",
       "rating": 3.8,
       "popular_items": ["Espresso", "Cheese Sandwich", "Maggi"],
-      "price_range": "Rs.25 - Rs.90",
-      "location": "Reception",
+      "price_range": "₹25 - ₹90",
+      "location": "Library Building, 1st Floor",
       "crowd_times": ["10:30-11:00", "14:00-14:30"]
     },
     {
@@ -29,7 +29,7 @@
       "cafe_name": "Naga Kitchen",
       "rating": 4.5,
       "popular_items": ["Smoked Pork with Rice", "Bamboo Shoot Chicken", "Galho"],
-      "price_range": "Rs.80 - Rs.180",
+      "price_range": "₹80 - ₹180",
       "location": "Behind Library",
       "crowd_times": ["13:00-14:00"]
     },
@@ -39,7 +39,7 @@
       "cafe_name": "Gate 2 Tea Point",
       "rating": 4.0,
       "popular_items": ["Masala Chai", "Veg Momos", "Egg Roll"],
-      "price_range": "Rs.15 - Rs.60",
+      "price_range": "₹15 - ₹60",
       "location": "Outside Gate 2",
       "crowd_times": ["08:30-09:00", "16:00-17:00"]
     }

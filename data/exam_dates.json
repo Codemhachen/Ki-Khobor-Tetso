@@ -5,23 +5,23 @@
   "records": [
     {
       "id": "ex-001",
-      "keywords": ["data structures", "BCA", "semester 3", "endsem", "exam"],
+      "keywords": ["data structures", "BCA", "semester 3", "midterm", "exam"],
       "subject": "Data Structures",
-      "exam_type": "End-Semester",
-      "date": "2026-11-15",
+      "exam_type": "Mid-Semester",
+      "date": "2026-06-15",
       "time": "10:00-12:00",
-      "room": "B-08",
+      "room": "B-201",
       "program": "BCA",
       "semester": 3
     },
     {
       "id": "ex-002",
-      "keywords": ["DBMS", "database", "BCA", "semester 3", "endsem"],
+      "keywords": ["DBMS", "database", "BCA", "semester 3", "midterm"],
       "subject": "Database Management",
-      "exam_type": "End-Semester",
-      "date": "2026-11-17",
+      "exam_type": "Mid-Semester",
+      "date": "2026-06-17",
       "time": "10:00-12:00",
-      "room": "B-09",
+      "room": "B-201",
       "program": "BCA",
       "semester": 3
     },
@@ -42,7 +42,7 @@
       "subject": "Postcolonial Literature",
       "exam_type": "End-Semester",
       "date": "2026-11-25",
-      "time": "1:30-4:30",
+      "time": "13:30-16:30",
       "room": "A-301",
       "program": "BA English",
       "semester": 5
@@ -54,7 +54,7 @@
       "exam_type": "End-Semester",
       "date": "2026-11-28",
       "time": "09:30-12:30",
-      "room": "B-02",
+      "room": "B-201",
       "program": "BCA",
       "semester": 3
     }
