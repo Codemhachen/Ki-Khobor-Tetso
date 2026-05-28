@@ -1,0 +1,62 @@
+{
+  "category": "clubs_and_activities",
+  "version": 1,
+  "type": "record",
+  "records": [
+    {
+      "id": "cl-001",
+      "keywords": ["coding", "programming", "tech", "hackathon", "computer club"],
+      "name": "Tech Nova",
+      "category": "Technical",
+      "description": "Student-run club for coding, hackathons, and open-source projects.",
+      "meeting_day": "Friday, 15:00",
+      "venue": "Computer Lab 3, C-Block",
+      "contact": "coders.club@tetsocollege.edu.in",
+      "how_to_join": "Sign up at the club fair in August or email the coordinator with your year and interest area."
+    },
+    {
+      "id": "cl-002",
+      "keywords": ["music", "band", "singing", "instruments", "cultural"],
+      "name": "Tetso Music Club",
+      "category": "Cultural",
+      "description": "College music society organizing band performances, open mics, and intercollege fests.",
+      "meeting_day": "Wednesday, 16:00",
+      "venue": "Auditorium Green Room",
+      "contact": "harmony@tetsocollege.edu.in",
+      "how_to_join": "Audition during the first 2 weeks of the semester. Bring your instrument or a song."
+    },
+    {
+      "id": "cl-003",
+      "keywords": ["debate", "MUN", "model UN", "public speaking", "literary"],
+      "name": "Tetso Oratory Club",
+      "category": "Literary",
+      "description": "Weekly debates, parliamentary sessions, and intercollege MUN representation.",
+      "meeting_day": "Saturday, 11:00",
+      "venue": "Lorin Hall, B-Block",
+      "contact": "debate.society@tetsocollege.edu.in",
+      "how_to_join": "Attend two trial sessions, then register with the secretary."
+    },
+    {
+      "id": "cl-004",
+      "keywords": ["sports", "football", "basketball", "athletics"],
+      "name": "Tetso Sports Association",
+      "category": "Sports",
+      "description": "Manages all inter-departmental and intercollege sports tournaments.",
+      "meeting_day": "Monday & Thursday, 16:30",
+      "venue": "Tetso Sports Cambus",
+      "contact": "sports@tetsocollege.edu.in",
+      "how_to_join": "Register at the Physical Education Department; trials are held in the first month."
+    },
+    {
+      "id": "cl-005",
+      "keywords": ["NSS", "social service", "volunteering", "community"],
+      "name": "NSS Tetso Unit",
+      "category": "Social Service",
+      "description": "National Service Scheme unit running community outreach, blood drives, and awareness camps.",
+      "meeting_day": "Saturday, 14:00",
+      "venue": "Room A-110",
+      "contact": "nss@tetsocollege.edu.in",
+      "how_to_join": "Open enrolment in August; 120 service hours required per year."
+    }
+  ]
+}

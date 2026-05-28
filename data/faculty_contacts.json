@@ -1,0 +1,67 @@
+{
+  "category": "faculty",
+  "version": 1,
+  "type": "record",
+  "records": [
+    {
+      "id": "fac-001",
+      "keywords": ["Rani", "Majaw", "data structures", "BCA", "computer science"],
+      "name": "Rani Majaw",
+      "department": "Computer Applications",
+      "designation": "Associate Professor",
+      "email": "Rani@tetsocollege.edu.in",
+      "phone": "+91-9856012301",
+      "cabin": "B-Block, Room 210",
+      "office_hours": "Mon-Fri, 14:00-16:00",
+      "subjects": ["Data Structures", "Algorithms", "C Programming"]
+    },
+    {
+      "id": "fac-002",
+      "keywords": ["Visato", "DBMS", "database", "BCA"],
+      "name": "Visato",
+      "department": "Computer Applications",
+      "designation": "Assistant Professor",
+      "email": "visato@tetsocollege.edu.in",
+      "phone": "+91-9856012302",
+      "cabin": "B-Block, Room 212",
+      "office_hours": "Tue, Thu, 11:00-13:00",
+      "subjects": ["Database Management", "SQL", "Web Technologies"]
+    },
+    {
+      "id": "fac-003",
+      "keywords": ["Asani", "Eshena", "management", "BBA"],
+      "name": "Asani Eshena",
+      "department": "Business Administration",
+      "designation": "Head of Department",
+      "email": "asani@tetsocollege.edu.in",
+      "phone": "+91-9856012310",
+      "cabin": "A-Block, Room 105",
+      "office_hours": "Mon-Wed, 10:00-12:00",
+      "subjects": ["Principles of Management", "Strategic Management"]
+    },
+    {
+      "id": "fac-004",
+      "keywords": ["Limatula", "Ao", "English", "communication"],
+      "name": "Ms. Limatula Ao",
+      "department": "English",
+      "designation": "Assistant Professor",
+      "email": "limatula.ao@tetsocollege.edu.in",
+      "phone": "+91-9856012320",
+      "cabin": "A-Block, Room 305",
+      "office_hours": "Mon-Fri, 13:00-14:00",
+      "subjects": ["English Communication", "Linguistics", "Business Communication"]
+    },
+    {
+      "id": "fac-005",
+      "keywords": ["Bendang", "Walling", "accounting", "finance", "BBA"],
+      "name": "Mr. Bendang Walling",
+      "department": "Commerce",
+      "designation": "Assistant Professor",
+      "email": "bendang.walling@tetsocollege.edu.in",
+      "phone": "+91-9856012315",
+      "cabin": "C-Block, Room 108",
+      "office_hours": "Wed-Fri, 14:30-16:30",
+      "subjects": ["Financial Accounting", "Cost Accounting"]
+    }
+  ]
+}

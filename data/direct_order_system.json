@@ -1,0 +1,52 @@
+{
+  "category": "direct_order_system",
+  "version": 1,
+  "type": "record",
+  "records": [
+    {
+      "id": "do-001",
+      "keywords": ["veg thali", "lunch", "main canteen", "order"],
+      "item": "Veg Thali",
+      "vendor": "Tetso Main Canteen",
+      "price": 70,
+      "eta_minutes": 10,
+      "available": true
+    },
+    {
+      "id": "do-002",
+      "keywords": ["chicken biryani", "biryani", "lunch", "order"],
+      "item": "Chicken Biryani",
+      "vendor": "Tetso Main Canteen",
+      "price": 120,
+      "eta_minutes": 15,
+      "available": true
+    },
+    {
+      "id": "do-003",
+      "keywords": ["momos", "veg momos", "snack", "order"],
+      "item": "Veg Momos (8 pcs)",
+      "vendor": "Aunty's Momo Stall",
+      "price": 40,
+      "eta_minutes": 8,
+      "available": true
+    },
+    {
+      "id": "do-004",
+      "keywords": ["cold coffee", "drink", "beverage", "order"],
+      "item": "Cold Coffee",
+      "vendor": "Library Side Cafe",
+      "price": 60,
+      "eta_minutes": 5,
+      "available": false
+    },
+    {
+      "id": "do-005",
+      "keywords": ["smoked pork", "naga", "local", "order"],
+      "item": "Smoked Pork with Rice",
+      "vendor": "Naga Kitchen",
+      "price": 150,
+      "eta_minutes": 20,
+      "available": true
+    }
+  ]
+}

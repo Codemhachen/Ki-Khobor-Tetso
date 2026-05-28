@@ -1,0 +1,64 @@
+{
+  "category": "timetable",
+  "version": 1,
+  "type": "record",
+  "records": [
+    {
+      "id": "tt-001",
+      "keywords": ["BCA", "semester 3", "section A", "monday", "timetable"],
+      "program": "BCA",
+      "semester": 3,
+      "section": "A",
+      "day": "Monday",
+      "periods": [
+        { "start": "09:00", "end": "09:55", "subject": "Data Structures", "faculty": "Rani Majaw", "room": "C-4" },
+        { "start": "10:00", "end": "10:55", "subject": "Database Management", "faculty": "Visato", "room": "C4" },
+        { "start": "11:00", "end": "11:55", "subject": "Discrete Mathematics", "faculty": "Nangshiba", "room": "C4" },
+        { "start": "12:00", "end": "12:55", "subject": "Operating Systems", "faculty": "Dr.Lucy", "room": "C4" },
+        { "start": "14:00", "end": "15:30", "subject": "DBMS Lab", "faculty": "Visato", "room": "Charles Babbage" }
+      ]
+    },
+    {
+      "id": "tt-002",
+      "keywords": ["BCA", "semester 3", "section A", "tuesday", "timetable"],
+      "program": "BCA",
+      "semester": 3,
+      "section": "A",
+      "day": "Tuesday",
+      "periods": [
+        { "start": "09:00", "end": "09:55", "subject": "Web Technologies", "faculty": "Wati", "room": "Multi-media" },
+        { "start": "10:00", "end": "10:55", "subject": "Data Structures", "faculty": "Rani Majaw", "room": "C4" },
+        { "start": "11:00", "end": "11:55", "subject": "English Communication", "faculty": "Tenipumei", "room": "C4" },
+        { "start": "12:00", "end": "12:55", "subject": "Operating Systems", "faculty": "Dr. Lucy", "room": "C4" }
+      ]
+    },
+    {
+      "id": "tt-003",
+      "keywords": ["BBA", "semester 1", "section B", "monday", "timetable"],
+      "program": "BBA",
+      "semester": 1,
+      "section": "B",
+      "day": "Monday",
+      "periods": [
+        { "start": "09:00", "end": "09:55", "subject": "Principles of Management", "faculty": "Dr. Toshi Aier", "room": "A-101" },
+        { "start": "10:00", "end": "10:55", "subject": "Financial Accounting", "faculty": "Mr. Bendang Walling", "room": "F-101" },
+        { "start": "11:00", "end": "11:55", "subject": "Business Economics", "faculty": "Ms. Hukheli Sema", "room": "B-103" },
+        { "start": "12:00", "end": "12:55", "subject": "Business Communication", "faculty": "Ms. Limatula Ao", "room": "D-101" }
+      ]
+    },
+    {
+      "id": "tt-004",
+      "keywords": ["BA English", "semester 5", "section A", "wednesday", "timetable"],
+      "program": "BA English",
+      "semester": 5,
+      "section": "A",
+      "day": "Wednesday",
+      "periods": [
+        { "start": "09:00", "end": "09:55", "subject": "Postcolonial Literature", "faculty": "Dr. Kekhrievono Yhoshu", "room": "A-301" },
+        { "start": "10:00", "end": "10:55", "subject": "Linguistics", "faculty": "Ms. Limatula Ao", "room": "A-301" },
+        { "start": "11:00", "end": "11:55", "subject": "Indian Writing in English", "faculty": "Dr. Kekhrievono Yhoshu", "room": "A-301" },
+        { "start": "12:00", "end": "12:55", "subject": "Creative Writing", "faculty": "Mr. Asen Lemtur", "room": "A-303" }
+      ]
+    }
+  ]
+}

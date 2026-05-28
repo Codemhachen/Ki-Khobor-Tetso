@@ -1,0 +1,57 @@
+{
+  "category": "affordable_food_options",
+  "version": 1,
+  "type": "record",
+  "records": [
+    {
+      "id": "af-001",
+      "keywords": ["momos", "veg momos", "snack", "cheap"],
+      "name": "Steamed Veg Momos (8 pcs)",
+      "vendor": "Tetso Veg Canteen",
+      "location": "Near Hotspot",
+      "price": 40,
+      "is_veg": true,
+      "meal_type": "snack"
+    },
+    {
+      "id": "af-002",
+      "keywords": ["thali", "lunch", "rice", "dal", "veg meal"],
+      "name": "Veg Thali",
+      "vendor": "Step IN",
+      "location": "Near Tetso main gate",
+      "price": 70,
+      "is_veg": true,
+      "meal_type": "lunch"
+    },
+    {
+      "id": "af-003",
+      "keywords": ["chicken", "rice", "non-veg", "lunch"],
+      "name": "Chicken Rice Bowl",
+      "vendor": "Tetso non-veg Canteen",
+      "location": "Near Basketball Court",
+      "price": 90,
+      "is_veg": false,
+      "meal_type": "lunch"
+    },
+    {
+      "id": "af-004",
+      "keywords": ["tea", "chai", "Cofee","samosa", "evening snack"],
+      "name": "Chai + Samosa Combo",
+      "vendor": "Tetso Cafe",
+      "location": "Reception",
+      "price": 30,
+      "is_veg": true,
+      "meal_type": "snack"
+    },
+    {
+      "id": "af-005",
+      "keywords": ["breakfast", "puri", "sabzi", "morning"],
+      "name": "Puri Sabzi Plate",
+      "vendor": "Afo's Shop",
+      "location": "Near Boys Hostel Block",
+      "price": 50,
+      "is_veg": true,
+      "meal_type": "breakfast"
+    }
+  ]
+}

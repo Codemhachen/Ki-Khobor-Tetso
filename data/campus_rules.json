@@ -1,0 +1,42 @@
+{
+  "category": "campus_rules",
+  "version": 1,
+  "type": "knowledge",
+  "entries": [
+    {
+      "id": "rule-001",
+      "intent": "attendance_minimum",
+      "keywords": ["attendance", "minimum attendance", "75%", "attendance rule", "shortage"],
+      "question": "What is the minimum attendance required at Tetso College?",
+      "answer": "Students must maintain at least 75% attendance in every subject to be eligible for end-semester exams. Below 75% may result in detention."
+    },
+    {
+      "id": "rule-002",
+      "intent": "dress_code",
+      "keywords": ["dress code", "uniform", "ID card", "what to wear"],
+      "question": "Is there a dress code on campus?",
+      "answer": "Students must wear neat, formal attire and carry their college ID card at all times on campus. Ripped jeans, slippers, and shorts are not permitted in classrooms."
+    },
+    {
+      "id": "rule-003",
+      "intent": "ragging_policy",
+      "keywords": ["ragging", "anti-ragging", "bullying", "harassment"],
+      "question": "What is the anti-ragging policy?",
+      "answer": "Tetso College has zero tolerance for ragging. Report any incident to the Anti-Ragging Committee or the Dean of Student Affairs. Penalties include suspension and FIR registration."
+    },
+    {
+      "id": "rule-004",
+      "intent": "library_rules",
+      "keywords": ["library", "library timings", "books", "reading hall"],
+      "question": "What are the library rules and timings?",
+      "answer": "Library is open Mon-Sat, 08:30-17:30. Up to 2 books can be issued for 14 days. Silence is mandatory; food and drinks are not allowed inside."
+    },
+    {
+      "id": "rule-005",
+      "intent": "mobile_phone_policy",
+      "keywords": ["mobile phone", "phone", "class", "device"],
+      "question": "Can I use my mobile phone in class?",
+      "answer": "Phones must stay on silent during lectures. Classroom use is at the faculty's discretion. Phones are strictly prohibited inside exam halls."
+    }
+  ]
+}

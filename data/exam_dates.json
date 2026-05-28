@@ -1,0 +1,62 @@
+{
+  "category": "exam_dates",
+  "version": 1,
+  "type": "record",
+  "records": [
+    {
+      "id": "ex-001",
+      "keywords": ["data structures", "BCA", "semester 3", "endsem", "exam"],
+      "subject": "Data Structures",
+      "exam_type": "End-Semester",
+      "date": "2026-11-15",
+      "time": "10:00-12:00",
+      "room": "B-08",
+      "program": "BCA",
+      "semester": 3
+    },
+    {
+      "id": "ex-002",
+      "keywords": ["DBMS", "database", "BCA", "semester 3", "endsem"],
+      "subject": "Database Management",
+      "exam_type": "End-Semester",
+      "date": "2026-11-17",
+      "time": "10:00-12:00",
+      "room": "B-09",
+      "program": "BCA",
+      "semester": 3
+    },
+    {
+      "id": "ex-003",
+      "keywords": ["financial accounting", "BBA", "semester 1", "endsem", "final"],
+      "subject": "Financial Accounting",
+      "exam_type": "End-Semester",
+      "date": "2026-11-22",
+      "time": "09:30-12:30",
+      "room": "C-101",
+      "program": "BBA",
+      "semester": 1
+    },
+    {
+      "id": "ex-004",
+      "keywords": ["postcolonial", "literature", "BA English", "semester 5", "endsem"],
+      "subject": "Postcolonial Literature",
+      "exam_type": "End-Semester",
+      "date": "2026-11-25",
+      "time": "1:30-4:30",
+      "room": "A-301",
+      "program": "BA English",
+      "semester": 5
+    },
+    {
+      "id": "ex-005",
+      "keywords": ["operating systems", "BCA", "semester 3", "endsem"],
+      "subject": "Operating Systems",
+      "exam_type": "End-Semester",
+      "date": "2026-11-28",
+      "time": "09:30-12:30",
+      "room": "B-02",
+      "program": "BCA",
+      "semester": 3
+    }
+  ]
+}

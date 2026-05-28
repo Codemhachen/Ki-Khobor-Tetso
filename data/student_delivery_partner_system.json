@@ -1,0 +1,39 @@
+{
+  "category": "student_delivery_partners",
+  "version": 1,
+  "type": "record",
+  "records": [
+    {
+      "id": "dp-001",
+      "keywords": ["delivery", "partner", "boys hostel", "B-block"],
+      "name": "Akum L.",
+      "contact": "+91-9856078001",
+      "coverage_areas": ["Boys Hostel", "B-Block", "Library"],
+      "hours": "Mon-Sat, 11:00-19:00"
+    },
+    {
+      "id": "dp-002",
+      "keywords": ["delivery", "partner", "girls hostel", "A-block", "C-block"],
+      "name": "Senti R.",
+      "contact": "+91-9856078002",
+      "coverage_areas": ["Girls Hostel", "A-Block", "C-Block"],
+      "hours": "Mon-Fri, 10:00-18:00"
+    },
+    {
+      "id": "dp-003",
+      "keywords": ["delivery", "partner", "gate 2", "evening"],
+      "name": "Vikuolie M.",
+      "contact": "+91-9856078003",
+      "coverage_areas": ["Gate 2 Area", "Sports Ground", "Auditorium"],
+      "hours": "Mon-Sun, 14:00-21:00"
+    },
+    {
+      "id": "dp-004",
+      "keywords": ["delivery", "partner", "weekend", "all blocks"],
+      "name": "Hukheli S.",
+      "contact": "+91-9856078004",
+      "coverage_areas": ["All Blocks", "Both Hostels"],
+      "hours": "Sat-Sun, 09:00-20:00"
+    }
+  ]
+}

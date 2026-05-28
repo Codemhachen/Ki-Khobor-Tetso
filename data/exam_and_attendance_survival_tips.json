@@ -1,0 +1,35 @@
+{
+  "category": "exam_and_attendance_survival_tips",
+  "version": 1,
+  "type": "knowledge",
+  "entries": [
+    {
+      "id": "tip-001",
+      "intent": "low_attendance_recovery",
+      "keywords": ["low attendance", "shortage", "make up attendance", "75%"],
+      "question": "I'm short on attendance - what can I do?",
+      "answer": "Approach your class mentor early. Genuine medical or family emergencies with documentation may be considered. Attend every remaining class, and note that some departments count NSS/sports activities toward attendance."
+    },
+    {
+      "id": "tip-002",
+      "intent": "exam_day_essentials",
+      "keywords": ["exam day", "what to bring", "hall ticket", "admit card"],
+      "question": "What should I bring on exam day?",
+      "answer": "Hall ticket, college ID, transparent pouch with 2 blue/black pens, pencil, eraser, scale, and a transparent water bottle. No mobile phones or smartwatches."
+    },
+    {
+      "id": "tip-003",
+      "intent": "last_minute_revision",
+      "keywords": ["last minute", "revision", "night before", "cram"],
+      "question": "Any last-minute revision strategy?",
+      "answer": "Don't start new topics the night before. Revise one-page summaries, focus on definitions and 2-mark questions, get at least 6 hours of sleep, and reach the hall 30 minutes early."
+    },
+    {
+      "id": "tip-004",
+      "intent": "attendance_tracking",
+      "keywords": ["track attendance", "attendance portal", "check attendance"],
+      "question": "How do I check my attendance percentage?",
+      "answer": "Log in to the student portal under the 'Attendance' tab - updated weekly. Raise discrepancies with the subject faculty within 7 days."
+    }
+  ]
+}
