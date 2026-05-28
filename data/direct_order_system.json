@@ -23,7 +23,15 @@
     },
     {
       "id": "do-003",
-      "keywords": ["momos", "veg momos", "snack", "order"],
+      "keywords": [
+  "momos",
+  "momo",
+  "veg momos",
+  "dumpling",
+  "snack",
+  "food",
+  "order"
+],
       "item": "Veg Momos (8 pcs)",
       "vendor": "Aunty's Momo Stall",
       "price": 40,
@@ -32,7 +40,15 @@
     },
     {
       "id": "do-004",
-      "keywords": ["cold coffee", "drink", "beverage", "order"],
+      "keywords": [
+  "cold coffee",
+  "coffee",
+  "iced coffee",
+  "drink",
+  "beverage",
+  "cafe",
+  "order"
+],
       "item": "Cold Coffee",
       "vendor": "Library Side Cafe",
       "price": 60,

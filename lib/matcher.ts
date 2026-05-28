@@ -1,42 +1,195 @@
-import { INDEX } from "./datasets";
+import faqs from "@/data/faqs.json";
+import studentQuestions from "@/data/student_questions.json";
+import directOrders from "@/data/direct_order_system.json";
 
-function tokenize(text: string): string[] {
-  return text.toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
-}
 
-function scoreItem(query: string, tokens: string[], keywords: string[]): number {
-  let score = 0;
-  for (const raw of keywords) {
-    const kw = raw.toLowerCase().trim();
-    if (!kw) continue;
-    if (query.includes(kw)) {
-      score += kw.split(/\s+/).length * 3;
-    } else {
-      const overlap = kw.split(/\s+/).filter((w) => tokens.includes(w)).length;
-      score += overlap;
+// =========================
+// DIRECT ORDER MATCHER
+// =========================
+
+export function matchDirectOrder(query: string, records: any[]) {
+  const normalizedQuery = query.toLowerCase().trim();
+
+  let bestMatch = null;
+  let highestScore = 0;
+
+  for (const record of records) {
+    let score = 0; 
+
+    for (const keyword of record.keywords) {
+      const normalizedKeyword = keyword.toLowerCase();
+
+      // Exact phrase match
+      if (normalizedQuery.includes(normalizedKeyword)) {
+        score += 5;
+      }
+
+      // Partial word match
+      const queryWords = normalizedQuery.split(" ");
+      const keywordWords = normalizedKeyword.split(" ");
+
+      for (const qWord of queryWords) {
+        for (const kWord of keywordWords) {
+          if (qWord === kWord) {
+            score += 2;
+          }
+        }
+      }
+    }
+
+    // Boost available items
+    if (record.available) {
+      score += 1;
+    }
+
+    if (score > highestScore) {
+      highestScore = score;
+      bestMatch = record;
     }
   }
-  return score;
-}
 
-export function answerQuery(message: string) {
-  const query = message.toLowerCase().trim();
-  const tokens = tokenize(message);
-
-  let best: { unit: any; score: number } = { unit: null, score: 0 };
-  for (const unit of INDEX) {
-    const s = scoreItem(query, tokens, unit.keywords);
-    if (s > best.score) best = { unit, score: s };
+  // Minimum confidence threshold
+  if (highestScore < 3) {
+    return null;
   }
 
-  if (!best.unit || best.score < 2) {
+  return bestMatch;
+}
+
+
+// =========================
+// GENERIC MATCH FUNCTION
+// =========================
+
+function genericMatch(query: string, records: any[]) {
+  const normalizedQuery = query.toLowerCase();
+
+  let bestMatch = null;
+  let highestScore = 0;
+
+  for (const record of records) {
+    let score = 0;
+
+    for (const keyword of record.keywords || []) {
+      const normalizedKeyword = keyword.toLowerCase();
+
+      if (normalizedQuery.includes(normalizedKeyword)) {
+        score += 5;
+      }
+
+      const queryWords = normalizedQuery.split(" ");
+      const keywordWords = normalizedKeyword.split(" ");
+
+      for (const qWord of queryWords) {
+        for (const kWord of keywordWords) {
+          if (qWord === kWord) {
+            score += 1;
+          }
+        }
+      }
+    }
+
+    if (score > highestScore) {
+      highestScore = score;
+      bestMatch = record;
+    }
+  }
+
+  if (highestScore < 2) {
+    return null;
+  }
+
+  return bestMatch;
+}
+
+
+// =========================
+// MAIN CHATBOT FUNCTION
+// =========================
+
+export function answerQuery(message: string) {
+  const normalizedMessage = message.toLowerCase();
+
+
+  // =========================
+  // FOOD / ORDER INTENT
+  // =========================
+
+  const foodIntentWords = [
+    "food",
+    "eat",
+    "canteen",
+    "order",
+    "biryani",
+    "momos",
+    "momo",
+    "coffee",
+    "drink",
+    "lunch",
+    "dinner",
+    "pork",
+    "meal",
+    "snack"
+  ];
+
+  const isFoodQuery = foodIntentWords.some(word =>
+    normalizedMessage.includes(word)
+  );
+
+  if (isFoodQuery) {
+    const orderMatch = matchDirectOrder(
+      normalizedMessage,
+      directOrders.records
+    );
+
+    if (orderMatch) {
+      return {
+        reply: orderMatch.available
+          ? `${orderMatch.item} is available at ${orderMatch.vendor} for ₹${orderMatch.price}. Estimated delivery time is ${orderMatch.eta_minutes} minutes.`
+          : `${orderMatch.item} is currently unavailable at ${orderMatch.vendor}.`
+      };
+    }
+  }
+
+
+  // =========================
+  // FAQ MATCHING
+  // =========================
+
+  const faqMatch = genericMatch(
+  normalizedMessage,
+  faqs.entries
+);
+
+  if (faqMatch) {
     return {
-      reply: "I'm not sure about that yet. Try asking about the timetable, faculty, exam dates, clubs, campus rules, or food on campus.",
-      source: "fallback",
-      matched: false,
-      data: null,
+      reply: faqMatch.answer
     };
   }
 
-  return { reply: best.unit.reply, source: best.unit.category, matched: true, data: best.unit.data };
+
+  // =========================
+  // STUDENT QUESTION MATCHING
+  // =========================
+
+  const studentMatch = genericMatch(
+  normalizedMessage,
+  studentQuestions.entries
+);
+
+  if (studentMatch) {
+    return {
+      reply: studentMatch.answer
+    };
+  }
+
+
+  // =========================
+  // FALLBACK
+  // =========================
+
+  return {
+    reply:
+      "Sorry, I could not find an answer for that question yet."
+  };
 }
