@@ -102,7 +102,7 @@ function genericMatch(query: string, records: any[]) {
       // Partial keyword matching
       const keywordWords = normalizedKeyword
         .split(" ")
-        .filter(word => !stopWords.includes(word));
+        .filter((word: string) => !stopWords.includes(word));
 
       for (const qWord of queryWords) {
         for (const kWord of keywordWords) {
