@@ -1,6 +1,8 @@
 import faqs from "@/data/faqs.json";
 import studentQuestions from "@/data/student_questions.json";
 import directOrders from "@/data/direct_order_system.json";
+import timetable from "@/data/timetable.json";
+import faculty from "@/data/faculty_contacts.json";
 
 
 // =========================
@@ -216,6 +218,36 @@ export function answerQuery(message: string) {
       reply: studentMatch.answer
     };
   }
+  // =========================
+// TIMETABLE MATCHING
+// =========================
+const timetableMatch = genericMatch(
+  normalizedMessage,
+  timetable.records
+);
+
+if (timetableMatch) {
+  const periods = timetableMatch.periods
+    .map((p: any) => `${p.start}-${p.end}: ${p.subject} (${p.faculty}, ${p.room})`)
+    .join("\n");
+  return {
+    reply: `${timetableMatch.program} Sem ${timetableMatch.semester} ${timetableMatch.section} - ${timetableMatch.day}:\n${periods}`
+  };
+}
+
+// =========================
+// FACULTY MATCHING
+// =========================
+const facultyMatch = genericMatch(
+  normalizedMessage,
+  faculty.records
+);
+
+if (facultyMatch) {
+  return {
+    reply: `${facultyMatch.name} (${facultyMatch.designation})\nDept: ${facultyMatch.department}\nEmail: ${facultyMatch.email}\nPhone: ${facultyMatch.phone}\nCabin: ${facultyMatch.cabin}\nOffice Hours: ${facultyMatch.office_hours}`
+  };
+}
 
 
   // =========================
