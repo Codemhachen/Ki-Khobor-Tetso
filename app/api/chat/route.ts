@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
 import { answerQuery } from "@/lib/matcher";
 
@@ -9,14 +9,17 @@ const CORS = {
   "Access-Control-Allow-Headers": "Content-Type",
 };
 
-const genAI = new GoogleGenerativeAI(
-  process.env.GEMINI_API_KEY!
-);
+const apiKey = process.env.GEMINI_API_KEY;
 
-const model = genAI.getGenerativeModel({
-  model: "gemini-2.0-flash",
+if (!apiKey) {
+  throw new Error(
+    "GEMINI_API_KEY is missing. Check the .env.local file."
+  );
+}
+
+const ai = new GoogleGenAI({
+  apiKey,
 });
-
 export async function OPTIONS() {
   return new NextResponse(null, {
     status: 204,
@@ -72,7 +75,9 @@ try {
     // SECOND: FALLBACK TO GEMINI
     // =========================
 
-    const result = await model.generateContent(`
+    const result = await ai.models.generateContent({
+  model: "gemini-3.5-flash",
+  contents: `
 You are KI-Khobor, an AI campus assistant for Tetso College.
 
 Rules:
@@ -84,9 +89,11 @@ Rules:
 
 Student Question:
 ${message}
-    `);
+  `,
+});
 
-    const response = result.response.text();
+const response =
+  result.text || "Sorry, I could not generate a response.";
 
     return NextResponse.json(
       {

@@ -117,12 +117,12 @@ function genericMatch(query: string, records: any[]) {
 
     // Bonus if question text matches
     if (
-      normalizedQuery.includes(
-        record.question?.toLowerCase() || ""
-      )
+     typeof record.question === "string" &&
+    record.question.trim() !== "" &&
+    normalizedQuery.includes(record.question.toLowerCase())
     ) {
-      score += 15;
-    }
+  score += 15;
+}
 
     if (score > highestScore) {
       highestScore = score;
